@@ -1,2 +1,28 @@
-<h1>Country#all_states</h1>
-<p>Find me in app/views/country/all_states.html.erb</p>
+<h1>All States</h1>
+<br>
+
+<table>
+	<thead>
+		<th>State</th>
+		<th>Capital</th>
+		<th>Population (million)</th>
+		<th>Area (k mile square)</th>
+	</thead>
+
+	<tbody>
+		<% State.all.each do |state| %>
+			<tr>
+				<td><%= state.name %></td>
+				<td><%= state.capital %></td>
+				<td><%= state.population %></td>
+				<td><%= state.area %></td>
+			</tr>
+
+		<% end %>
+
+	</tbody>
+
+</table>
+
+<p></p>
+<a href="home">Back</a>
