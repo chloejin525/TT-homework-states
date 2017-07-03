@@ -5,8 +5,7 @@
 * Create a new model in your project - call it State (name, capital, population, area).
 * Using ActiveRecord in the rails c:
 * Create 10 new States
-  * Practice the different ways of querying a State -
-  * All States, Finding One State, the First and Last States, etc.
+  * Practice the different ways of querying a State - All States, Finding One State, the First and Last States, etc.
   * Select a State to update - change some of its data - and save it
   * Delete one of your States
   * Now set up a new controller, called Country
