@@ -1,28 +1,7 @@
 <h1>All States</h1>
 <br>
 
-<table>
-	<thead>
-		<th>State</th>
-		<th>Capital</th>
-		<th>Population (million)</th>
-		<th>Area (k mile square)</th>
-	</thead>
-
-	<tbody>
-		<% State.all.each do |state| %>
-			<tr>
-				<td><%= state.name %></td>
-				<td><%= state.capital %></td>
-				<td><%= state.population %></td>
-				<td><%= state.area %></td>
-			</tr>
-
-		<% end %>
-
-	</tbody>
-
-</table>
+<%= render 'states_table' %>
 
 <p></p>
-<a href="home">Back</a>
+<a href="home" class="btn btn-default">Back</a>

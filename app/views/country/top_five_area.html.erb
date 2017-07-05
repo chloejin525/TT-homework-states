@@ -1,31 +1,7 @@
 <h1>Top 5 States Ranked by Area</h1>
 <br>
 
-<% states_all_sorted = State.all.sort_by {|state| state.area} %>
-<% states_all_sorted.reverse! %>
-
-<table>
-	<thead>
-		<th>State</th>
-		<th>Capital</th>
-		<th>Population (million)</th>
-		<th>Area (k mile square)</th>
-	</thead>
-
-	<tbody>
-		<% states_all_sorted[0..4].each do |state| %>
-			<tr>
-				<td><%= state.name %></td>
-				<td><%= state.capital %></td>
-				<td><%= state.population %></td>
-				<td><%= state.area %></td>
-			</tr>
-
-		<% end %>
-
-	</tbody>
-
-</table>
+<%= render 'states_table' %>
 
 <p></p>
-<a href="home">Back</a>
+<a href="home" class="btn btn-default">Back</a>

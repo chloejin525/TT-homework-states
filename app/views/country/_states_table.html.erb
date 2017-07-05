@@ -1,0 +1,22 @@
+<table>
+	<thead>
+		<th>State</th>
+		<th>Capital</th>
+		<th>Population (million)</th>
+		<th>Area (k mile square)</th>
+	</thead>
+
+	<tbody>
+		<% @states.each do |state| %>
+			<tr>
+				<td><%= state.name %></td>
+				<td><%= state.capital %></td>
+				<td><%= state.population %></td>
+				<td><%= state.area %></td>
+			</tr>
+
+		<% end %>
+
+	</tbody>
+
+</table>
